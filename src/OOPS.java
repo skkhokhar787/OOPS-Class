@@ -1,9 +1,9 @@
-class Pen {
-    String color;
-    String type;
+class Student {
+    String name;
+    int age;
 
-    public void write () {
-        System.out.println("Writing something..");
+    Student () {
+        System.out.println("This is constructor.");
     }
 
 }
