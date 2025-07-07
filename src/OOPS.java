@@ -1,20 +1,17 @@
 class Student {
     String name;
-    int age;
-
-    Student () {
-        System.out.println("This is constructor.");
+    static String school;
+    public static void changeSchool () {
+        school = "New School";
     }
-
 }
-
 public class OOPS {
     public static void main (String [] args) {
-        Pen pen1 = new Pen();
-        pen1.color = "Red";
-        pen1.type = "gel";
+        Student.school = "ABC";
+        Student student1 = new Student();
+        student1.name = "Flower";
+        System.out.println(student1.school);
 
-        pen1.write();
 
     }
 }
